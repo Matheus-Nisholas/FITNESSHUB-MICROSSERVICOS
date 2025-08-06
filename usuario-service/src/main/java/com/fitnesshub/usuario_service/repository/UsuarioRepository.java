@@ -5,9 +5,8 @@ import io.quarkus.hibernate.orm.panache.PanacheRepository;
 import jakarta.enterprise.context.ApplicationScoped;
 
 /**
- * Repositório do usuário com operações base do Panache.
+ * Repositório da entidade Usuario com Panache.
  */
 @ApplicationScoped
-public class UsuarioRepository implements PanacheRepository<Usuario> {
-    // Métodos adicionais podem ser adicionados aqui
+public interface UsuarioRepository extends PanacheRepository<Usuario> {
 }
