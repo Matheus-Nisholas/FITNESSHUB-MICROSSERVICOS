@@ -8,5 +8,5 @@ import jakarta.enterprise.context.ApplicationScoped;
  * Repositório da entidade Usuario com Panache.
  */
 @ApplicationScoped
-public interface UsuarioRepository extends PanacheRepository<Usuario> {
+public class UsuarioRepository implements PanacheRepository<Usuario> {
 }
